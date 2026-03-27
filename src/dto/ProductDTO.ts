@@ -12,20 +12,10 @@ export class ProductDTO {
   }
 
   static generateDefault(): ProductDTO {
-    return new ProductDTO(
-      0,
-      'home work 12',
-      100,
-      new Date().toISOString()
-    )
+    return new ProductDTO(0, 'home work 12', 100, new Date().toISOString())
   }
 
   static generateCustom(name: string, price: number): ProductDTO {
-    return new ProductDTO(
-      0,
-      name,
-      price,
-      new Date().toISOString()
-    )
+    return new ProductDTO(0, name, price, new Date().toISOString())
   }
 }

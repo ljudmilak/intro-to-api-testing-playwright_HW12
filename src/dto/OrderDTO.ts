@@ -6,7 +6,14 @@ export class OrderDTO {
   comment: string
   id: number
 
-  constructor(status: string, courierId: number, customerName: string, customerPhone: string, comment: string, id: number,) {
+  constructor(
+    status: string,
+    courierId: number,
+    customerName: string,
+    customerPhone: string,
+    comment: string,
+    id: number,
+  ) {
     this.status = status
     this.courierId = courierId
     this.customerName = customerName
@@ -16,14 +23,7 @@ export class OrderDTO {
   }
 
   static generateDefault(): OrderDTO {
-    const dto = new OrderDTO(
-      'OPEN',
-      0,
-      'string',
-      'string',
-      'string',
-      0,
-    )
+    const dto = new OrderDTO('OPEN', 0, 'string', 'string', 'string', 0)
 
     return dto
   }

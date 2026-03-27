@@ -13,7 +13,8 @@ export class LoginDTO {
 
   static generateCorrectPair(): LoginDTO {
     return new LoginDTO(
-      process.env.USER || 'missing USER env var', process.env.PASSWORD || 'missing PASSWORD env var',
+      process.env.USER || 'missing USER env var',
+      process.env.PASSWORD || 'missing PASSWORD env var',
     )
   }
 }
